@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Portfolio</title>
-		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-		<script src="https://kit.fontawesome.com/9a94217abf.js" crossorigin="anonymous"></script>
-	</head>
-<body>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<script src="https://kit.fontawesome.com/9a94217abf.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-200">
 	<header class="bg-gray-900">
 		<nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
 			<div class="flex lg:flex-1">
-				<a href="#" class="-m-1.5 p-1.5">
+				<a href="#" class="-m-1.5 p-1.5 flex ">
 					<span class="sr-only">Your Company</span>
 					<img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt=""
 						class="h-8 w-auto" />
+					<p class="text-indigo-500 text-4xl font-semibold">Nivaldo Targino</p>
 				</a>
 			</div>
 			<div class="flex lg:hidden">
@@ -73,7 +76,7 @@
 								<div class="py-6">
 									<a href="Curriculo 2026.1 DEV.pdf" download
 										class="text-sm/6 font-semibold text-white">Baixar CV<span aria-hidden="true"><i
-												class="fa-solid fa-download"></i></span></a>
+												class="fa-solid fa-download "></i></span></a>
 								</div>
 							</div>
 						</div>
@@ -82,10 +85,34 @@
 			</dialog>
 		</el-dialog>
 	</header>
-	<div id="sobreMim" class="m-8">
-		<div class="grid grid-cols-3 gap-4">
-			<div class="bg-blue-500 text-5xl flex items-center justify-center font-serif"><p class="">Sobre Mim</p></div>
-			<div class="col-span-2 bg-gray-100 text-center p-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam, nunc nisl aliquet nunc, quis aliquam nisl nunc eget nisl. Nullam auctor, nisl eget ultricies aliquam, nunc nisl aliquet nunc, quis aliquam nisl nunc eget nisl.</div>
+	<div class="m-8">
+		<div id="sobreMim" class="grid grid-cols-3 gap-4 mb-10">
+			<div class="bg-gray-900 text-white text-5xl rounded-l-4xl text-center content-center font-serif">
+				<p class="text-3xl sm:text-5xl">Sobre Mim</p>
+			</div>
+			<div class="col-span-2 bg-gray-100 rounded-r-4xl text-center p-4">Sou <strong>Nivaldo Targino</strong>,
+				estudante de Análise e
+				Desenvolvimento de Sistemas, atualmente no <strong>4º período</strong> pela <strong>UNOESTE</strong>,
+				com foco em aprender e evoluir no
+				<strong>desenvolvimento backend</strong>. Tenho interesse em construção de sistemas, lógica de
+				programação e organização
+				de código, buscando sempre desenvolver soluções eficientes, bem estruturadas e fáceis de manter.
+			</div>
+		</div>
+		<div id="tecnologias" class="">
+			<div class="bg-gray-900 text-white text-5xl rounded-2xl text-center font-serif mb-3 p-4">
+				<p class="">Tecnologias em que Trabalho</p>
+			</div>
+			<div class="bg-gray-100 rounded-2xl text-center p-4">
+				<div class="grid grid-cols-2 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-items-center ">
+					<div class=" hover:border hover:rounded-xl hover:bg-indigo-300 transition-transform duration-500 hover:scale-125 h-32 w-32"><img class="h-32" src="/img/js.png" alt="JavaScript">JavaScript</div>
+					<div class=" hover:border hover:rounded-xl hover:bg-indigo-300 transition-transform duration-500 hover:scale-125 h-32 w-32"><img class="h-32" src="/img/nodejs.png" alt="Node.JS">Node.JS</div>
+					<div class=" hover:border hover:rounded-xl hover:bg-indigo-300 transition-transform duration-500 hover:scale-125 h-32 w-32"><img class="h-32" src="/img/c.png" alt="C">C</div>
+					<div class=" hover:border hover:rounded-xl hover:bg-indigo-300 transition-transform duration-500 hover:scale-125 h-32 w-32"><img class="h-32" src="/img/html.png" alt="HTML">HTML</div>
+					<div class=" hover:border hover:rounded-xl hover:bg-indigo-300 transition-transform duration-500 hover:scale-125 h-32 w-32"><img class="h-32" src="/img/css.png" alt="CSS">CSS</div>
+				</div>
+			</div>
+			
 		</div>
 	</div>
 </body>

@@ -7,13 +7,15 @@
 	<title>Portfolio</title>
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 	<script src="https://kit.fontawesome.com/9a94217abf.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<script defer src="js/index.js"></script>
 </head>
 
-<body class="bg-gray-200">
-	<header class="bg-gray-900">
+<body class="" style="background-color: #240046;">
+	<header class="bg-gray-950 sticky top-0" style="background-color: #10002b;">
 		<nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
 			<div class="flex lg:flex-1">
-				<a href="#" class="-m-1.5 p-1.5 flex ">
+				<a href="#" class="-m-1.5 p-1.5 flex items-center gap-3">
 					<span class="sr-only">Your Company</span>
 					<img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt=""
 						class="h-8 w-auto" />
@@ -32,7 +34,7 @@
 				</button>
 			</div>
 			<el-popover-group class="hidden lg:flex lg:gap-x-12">
-				<a href="#sobreMim" class="text-sm/6 font-semibold text-white">Sobre mim</a>
+				<a href="#" class="text-sm/6 font-semibold text-white">Sobre mim</a>
 				<a href="#tecnologias" class="text-sm/6 font-semibold text-white">Tecnologias que trabalho</a>
 				<a href="#projetos" class="text-sm/6 font-semibold text-white">Projetos</a>
 			</el-popover-group>
@@ -47,10 +49,11 @@
 					<el-dialog-panel
 						class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
 						<div class="flex items-center justify-between">
-							<a href="#" class="-m-1.5 p-1.5">
+							<a href="#" class="-m-1.5 p-1.5 flex items-center gap-3">
 								<span class="sr-only">Your Company</span>
-								<img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-									alt="" class="h-8 w-auto" />
+								<img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="" class="h-8 w-auto" />
+								<p class="text-indigo-500 text-2xl font-semibold">Nivaldo Targino</p>
+
 							</a>
 							<button type="button" command="close" commandfor="mobile-menu"
 								class="-m-2.5 rounded-md p-2.5 text-gray-400">
@@ -64,7 +67,7 @@
 						<div class="mt-6 flow-root">
 							<div class="-my-6 divide-y divide-white/10">
 								<div class="space-y-2 py-6">
-									<a href="#sobreMim"
+									<a href="#"
 										class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Sobre
 										mim</a>
 									<a href="#tecnologias"
@@ -85,26 +88,21 @@
 			</dialog>
 		</el-dialog>
 	</header>
-	<div class="m-8">
+	<div class="m-8 ">
 		<div id="sobreMim" class="grid grid-cols-3 gap-4 mb-10">
-			<div class="bg-gray-900 text-white text-5xl rounded-l-4xl text-center content-center font-serif">
+			<div class="bg-gray-950 text-white text-5xl rounded-l-4xl text-center content-center font-serif shadow-xs shadow-[#7b2cbf]" style="background-color: #10002b;">
 				<p class="text-3xl sm:text-5xl">Sobre Mim</p>
 			</div>
-			<div class="col-span-2 bg-gray-100 rounded-r-4xl text-center p-4">Sou <strong>Nivaldo Targino</strong>,
-				estudante de Análise e
-				Desenvolvimento de Sistemas, atualmente no <strong>4º período</strong> pela <strong>UNOESTE</strong>,
-				com foco em aprender e evoluir no
-				<strong>desenvolvimento backend</strong>. Tenho interesse em construção de sistemas, lógica de
-				programação e organização
-				de código, buscando sempre desenvolver soluções eficientes, bem estruturadas e fáceis de manter.
+			<div class="col-span-2 bg-gray-100 rounded-r-4xl text-xl text-center p-4 shadow-xs shadow-[#7b2cbf]">Sou <strong>Nivaldo Targino</strong>, estudante de Análise e Desenvolvimento de Sistemas, atualmente no <strong>4º período</strong> pela <strong>UNOESTE</strong>, com foco em aprender e evoluir no <strong>desenvolvimento backend</strong>. Tenho interesse em construção de sistemas, lógica de programação e organização de código, buscando sempre desenvolver soluções eficientes, bem estruturadas e fáceis de manter.
 			</div>
 		</div>
+		<div class="my-8 border border-white"></div>
 		<div id="tecnologias" class="">
-			<div class="bg-gray-900 text-white text-5xl rounded-2xl text-center font-serif mb-3 p-4">
-				<p class="">Tecnologias em que Trabalho</p>
+			<div class="bg-gray-950 text-white text-5xl rounded-2xl text-center font-serif mb-3 p-4 shadow-xs shadow-[#7b2cbf]" style="background-color: #10002b;">
+				<p class="">Tecnologias com que Trabalho</p>
 			</div>
-			<div class="bg-gray-100 rounded-2xl text-center p-4">
-				<div class="grid grid-cols-2 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-items-center ">
+			<div class="bg-gray-100 rounded-2xl text-center p-8">
+				<div class="grid grid-cols-2 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 justify-items-center ">
 					<div class=" hover:border hover:rounded  transition-transform duration-500 hover:scale-125 h-32 w-32"><img class="h-32" src="img/js.png" alt="JavaScript">JavaScript</div>
 					<div class=" hover:border hover:rounded  transition-transform duration-500 hover:scale-125 h-32 w-32"><img class="h-32" src="img/nodejs.png" alt="Node.JS">Node.JS</div>
 					<div class=" hover:border hover:rounded  transition-transform duration-500 hover:scale-125 h-32 w-32"><img class="h-32" src="img/c.png" alt="C">C</div>
@@ -115,7 +113,28 @@
 					<div class=" hover:border hover:rounded  transition-transform duration-500  hover:scale-125 h-32 w-32"><img class="h-32" src="img/tailwind.png" alt="Tailwind">Tailwind CSS</div>
 				</div>
 			</div>
-			
+		</div>
+		<div class="my-8 border-white border"></div>
+		<div id="projetos" class="">
+			<div class="bg-gray-950 text-white text-5xl rounded-2xl text-center font-serif mb-3 p-4 shadow-xs shadow-[#7b2cbf]" style="background-color: #10002b;">
+				<p class="">Projetos</p>
+			</div>
+			<div class="grid grid-cols-3 gap-3">
+				<div class="bg-gray-100 rounded-2xl p-8 xl:col-span-1 col-span-3">
+					<p class="font-bold text-2xl text-center">EGAC Sistema Gerencial Empresarial</p><br>
+					<p class="text-xl">Desenvolvi, em conjunto com colegas, o <strong>EGAC Sistema Gerencial Empresarial (ESGE)</strong>, um sistema voltado para apoiar a Empresa de Gestão Agrícola e Comércio (EGAC) na administração de seus <strong>processos financeiros, administrativos e operacionais</strong>.
+					O objetivo do sistema é centralizar e automatizar o <strong>controle de clientes, fornecedores, produtos, insumos, equipamentos agrícolas e serviços</strong>, proporcionando uma visão unificada das operações e auxiliando a tomada de decisões estratégicas. <br><br>
+					<strong>Tecnologias utilizadas:</strong><br>
+					JavaScript, Node.js, Express, EJS, HTML, CSS, Bootstrap, MySQL, Cookie-Parser (controle de sessões de usuários), DOTENV (gerenciamento de variáveis de ambiente) e Multer (upload de imagens).</p>
+				</div>
+				<div class="bg-gray-100 rounded-2xl p-8 xl:col-span-2 col-span-3">
+					<img src="img/egac/home.png" class="h-max" alt="" id="imgEGAC">
+					<div class="flex justify-around" id="carrosselEGAC">
+						<button class="bg-white rounded h-10 w-8 text-4xl"><i class="bi bi-arrow-left-square-fill"></i></button>
+						<button class="bg-white rounded h-10 w-8 text-4xl"><i class="bi bi-arrow-right-square-fill"></i></button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

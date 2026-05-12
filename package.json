@@ -15,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/nivaldot/portfolio/issues"
   },
-  "homepage": "https://github.com/nivaldot/portfolio#readme",
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.18",
-    "tailwindcss": "^4.1.18"
-  }
+  "homepage": "https://github.com/nivaldot/portfolio#readme"
 }
